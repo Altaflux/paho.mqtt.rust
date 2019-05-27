@@ -168,7 +168,7 @@ mod build {
             cmk_out_dir = cmk_out_dir.join("lib64");
             lib_path = "lib64";
         }
-
+        println!("CHOSEN LIB PATH: {}", lib_path);
         let link_lib = link_lib();
         let link_file = format!("lib{}.a", link_lib);
 
